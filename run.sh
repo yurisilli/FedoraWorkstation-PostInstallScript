@@ -29,7 +29,6 @@ sudo dnf remove -y gnome-contacts   # Contacts
 sudo dnf remove -y gnome-weather    # Weather
 sudo dnf remove -y simple-scan      # Document Scanner
 sudo dnf remove -y gnome-tour       # Tour
-sudo dnf remove -y gnome-boxes      # Boxes
 sudo dnf remove -y gnome-maps       # Maps
 sudo dnf remove -y gnome-clocks     # Clocks
 sudo dnf remove -y totem            # Videos
@@ -37,6 +36,10 @@ sudo dnf remove -y yelp             # Help
 sudo dnf remove -y mediawriter      # Fedora Media Writer
 sudo dnf remove -y rhythmbox        # Rhythmbox
 sudo dnf remove -y snapshot         # Camera
+
+# DNF Clean
+sudo dnf autoremove
+sudo dnf clean all
 
 #Enable Flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
